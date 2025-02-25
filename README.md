@@ -7,6 +7,10 @@ Here you will find various Dockerfiles that you can learn from and practice.
 ## Common Commands
 
 ```dockerfile
+# FROM
+# Specifies the base image for the Docker container.
+FROM node:22-alpine
+
 # WORKDIR
 # Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY instructions that follow it.
 WORKDIR /app
@@ -26,6 +30,11 @@ EXPOSE 8080
 # ENV
 # Sets an environment variable.
 ENV NODE_ENV=production
+
+# COPY
+# Allows files from the Docker host to be added to the Docker image.
+COPY . /app
+```
 
 # COPY
 # Allows files from the Docker host to be added to the Docker image.
