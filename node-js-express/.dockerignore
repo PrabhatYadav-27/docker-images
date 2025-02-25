@@ -1,0 +1,2 @@
+node_modules 
+# this will not copy the node_modules directory to the image as we should install the dependencies in the Dockerfile but not copy from the host machine
